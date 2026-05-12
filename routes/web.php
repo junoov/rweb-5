@@ -7,5 +7,20 @@ Route::get('/', function () {
 });
 
 Route::get('/hello', function () {
-    return "Hello, World! Rizky Noviansyah 2300018364";
+    return "Hello, World!";
 });
+Route::get('/about', function () {
+    return "Rizky Noviansyah 2300018364";
+});
+Route::get('/kontak', function () {
+    return "Ini Halaman Kontak";
+});
+
+Route::get('/nama/{nama}', function ($nama) {
+    return "Halo, " . $nama;
+});
+
+Route::get('/umur/{umur}', function ($umur) {
+    return "Umur saya " . $umur . " tahun";
+});
+
